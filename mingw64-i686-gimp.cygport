@@ -2,7 +2,7 @@ CROSS_HOST="i686-w64-mingw32"
 inherit cross gnome2
 
 NAME="mingw64-i686-gimp"
-VERSION=2.8.8
+VERSION=2.8.10
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="GNU Image Manipulation Program for Win32 toolchain"
@@ -20,7 +20,7 @@ DIFF_EXCLUDES="devel-docs"
 
 CYGCONF_ARGS="
 	--disable-static
-	--disable-default-binary
+	--enable-default-binary
 	--enable-gimp-console
 	--disable-python
 	--without-alsa
